@@ -2,7 +2,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/zeerakt/rung/actions/workflows/deploy.yml/badge.svg)](https://github.com/zeerakt/rung/actions)
 
-A South Asian partnership trick-taking card game (**Rung / Court Piece**) featuring a **2.5D perspective felt tabletop**, an **imperfect-information Bot AI with void/boss memory**, a **5-stage GitHub Actions CI/CD pipeline**, and a **zero-dependency Node.js WebSocket Multiplayer Server** ready for **Oracle Cloud Infrastructure (OCI) VM** deployment.
+A South Asian partnership trick-taking card game (**Rung / Court Piece**) featuring a **2/2.5D perspective felt tabletop**, an **imperfect-information Bot AI with void/boss memory**, a **5-stage GitHub Actions CI/CD pipeline**, and a **zero-dependency Node.js WebSocket Multiplayer Server** ready for **Oracle Cloud Infrastructure (OCI) VM** deployment.
 
 - **Live GitHub Pages Frontend**: `https://zeerakt.github.io/rung/`
 - **Multiplayer Backend**: Zero-dependency Node.js 20 WebSocket server (`server/multiplayerServer.mjs`) + Oracle Cloud VM provisioning (`deploy/oracle-vm/setup_oracle_vm.sh`).
