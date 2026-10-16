@@ -1,0 +1,25 @@
+{
+  "name": "@zeerakt/rung",
+  "version": "1.2.0",
+  "description": "Royal Rung (Court Piece) 2.5D Card Game — Single Sar, Double Sar, Hidden Rung & Oracle Cloud VM Multiplayer Server",
+  "type": "module",
+  "homepage": "https://zeerakt.github.io/rung/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeerakt/rung.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start:server": "node server/multiplayerServer.mjs",
+    "test:docs": "node -e \"import('node:fs').then(fs => { const req = ['README.md','index.html','docs/ARCHITECTURE.md','docs/RULES.md','docs/PIPELINE.md','docs/MULTIPLAYER_ORACLE_VM.md','server/roomManager.mjs','server/multiplayerServer.mjs','deploy/oracle-vm/setup_oracle_vm.sh','deploy/oracle-vm/nginx-rung.conf','.github/workflows/deploy.yml']; for (const f of req) { if (!fs.existsSync(f) || fs.statSync(f).size === 0) throw new Error('Missing or empty: ' + f); } console.log('✓ All documentation, multiplayer server & Oracle VM files verified (' + req.length + ' files)'); })\"",
+    "test:unit": "node tests/engine.test.mjs",
+    "test:mp": "node tests/multiplayer.test.mjs",
+    "test:sim": "node tests/simulation.test.mjs",
+    "test": "npm run test:docs && npm run test:unit && npm run test:mp && npm run test:sim"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

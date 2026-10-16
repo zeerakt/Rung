@@ -1,0 +1,19 @@
+[Unit]
+Description=Royal Rung (Court Piece) Authoritative Multiplayer WebSocket Server
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/rung
+Environment=NODE_ENV=production
+Environment=PORT=8080
+Environment=HOST=0.0.0.0
+ExecStart=/usr/bin/node /opt/rung/server/multiplayerServer.mjs
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
